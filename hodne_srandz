@@ -9,5 +9,26 @@ vsledek = fce(list)
 print(vsledek)
 
 
+### pyth.max funkce napsaná ručně 
+
+v1 = 2
+v2= 5
+v5 = 23
+
+### vem nejvetší a udelej funkci co printně nejvetší 
+   
+def nej(v1,v2,v5):
+        if v1 > v2 and v1 > v5:
+            print(v1)
+        elif v2 > v1 and v2 > v5: 
+            print(v2)
+        elif v5 > v2 and v5 > v2:
+            print(v5)
+        return(nej)
+
+nej(v1,v2,v5)
+
+
+
 
 
