@@ -29,6 +29,16 @@ def nej(v1,v2,v5):
 nej(v1,v2,v5)
 
 
+## f striny a jejich funkce při printovaní 
+
+jmeno = input("zadej jmeno: ")
+věk = input("zadej věK: ")
+
+
+
+sto = 100 - int(věk) 
+
+print(f"sto ti bude za ", sto)
 
 
 
