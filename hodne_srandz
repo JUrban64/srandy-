@@ -41,4 +41,18 @@ sto = 100 - int(věk)
 print(f"sto ti bude za ", sto)
 
 
+##################################################
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+
+less = [] ## prázdný list pro menší 
+
+
+for i in a: 
+    if i < 5:
+        less.append(i) ## append vkládo do prázdného listu, které projeli for smyčkou 
+        
+
+print(less)
+
+
 
