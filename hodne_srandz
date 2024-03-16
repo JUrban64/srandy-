@@ -31,6 +31,23 @@ nej(v1,v2,v5)
 
 ## f striny a jejich funkce při printovaní 
 
+
+
+## divisor něco 
+
+num = int(input("zadej čislo: "))
+
+listrange = list(range(1,num+1))
+
+delitel = []
+
+for i in listrange: 
+    if num % i  == 0: 
+       delitel.append(i)
+    
+print(delitel)
+
+
 jmeno = input("zadej jmeno: ")
 věk = input("zadej věK: ")
 
