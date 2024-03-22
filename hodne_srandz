@@ -30,7 +30,17 @@ nej(v1,v2,v5)
 
 
 ## f striny a jejich funkce při printovaní 
+################################
+a = [1, 7, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 
+c = []
+
+for i in (a): ## pro každe i v ačku 
+    if i in b: ## jesli je to i také v béčku, 
+        c.append(i) ## dávej proměnou i do c 
+
+print(c)
 
 
 ## divisor něco 
