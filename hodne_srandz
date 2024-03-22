@@ -80,6 +80,11 @@ for i in a:
         
 
 print(less)
+#############################
 
-
+inp = input(" napiš něco: ")
+np = "" ## prazdnu string 
+for i in reversed(inp):  ## každé i dava pozpátku 
+    np += i  ## dava do prázdné proměné np i po jednom 
+print(np)
 
