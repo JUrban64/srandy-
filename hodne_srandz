@@ -88,3 +88,16 @@ for i in reversed(inp):  ## každé i dava pozpátku
     np += i  ## dava do prázdné proměné np i po jednom 
 print(np)
 
+###############################################
+
+a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+b = []
+for i in a: 
+    if i % 2 == 0:
+        b.append(i)
+
+print(b)
+
+## todle je list comp. syntaxe  
+c =[ d for d in a if d % 2 == 0] ## [expresion for item in iterable if codnition]
+print(c)
