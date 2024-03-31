@@ -101,3 +101,47 @@ print(b)
 ## todle je list comp. syntaxe  
 c =[ d for d in a if d % 2 == 0] ## [expresion for item in iterable if codnition]
 print(c)
+
+########################################################
+## fibo 
+## 0 + 1 = 1: že beru i + 1, potom dostaávm jedničku 1 + 1 a dostávm 2 a k dvojce přičítam 2+1 
+## nula plus 1 a pak jedna plus jedna a pak, výsledek 2 (n) +(n-1)= k
+
+def fiboin(n):
+    if n <=1:
+        return n
+    else:
+        return(fiboin(n-1)+fiboin(n-2))
+
+kolik  = 10 
+
+if kolik <= 1:
+    print("nene")
+else: 
+    for i in range(kolik):
+        print(fiboin(i))
+# Program to display the Fibonacci sequence up to n-th term
+
+nterms = int(input("How many terms? "))
+
+# first two terms
+n1, n2 = 0, 1
+count = 0
+
+# check if the number of terms is valid
+if nterms <= 0:
+   print("Please enter a positive integer")
+# if there is only one term, return n1
+elif nterms == 1:
+   print("Fibonacci sequence upto",nterms,":")
+   print(n1)
+# generate fibonacci sequence
+else:
+   print("Fibonacci sequence:")
+   while count < nterms:
+       print(n1)
+       nth = n1 + n2 ## 1, 1 +  2
+       # update values
+       n1 = n2 # 1 
+       n2 = nth # 1 
+       count += 1
